@@ -5,8 +5,13 @@
     int a = Convert.ToInt32(Console.ReadLine());
     Console.Write("Введите число B: ");
     int b = Convert.ToInt32(Console.ReadLine());
-    double res = Math.Pow(a, b);
-    Console.Write(res);
+    int res = 1;
+    int count = 1;
+    while(count <= b){
+        res = res * a;
+        count++;
+    } 
+    Console.WriteLine(res);
 }
 
 void Zadacha2(){
@@ -46,6 +51,6 @@ void Zadacha3(){
         Console.Write(array[i] + " ");
     }
 }
-//Zadacha1();
+Zadacha1();
 //Zadacha2();
-Zadacha3();
+//Zadacha3();
